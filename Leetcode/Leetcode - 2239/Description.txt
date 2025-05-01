@@ -1,0 +1,10 @@
+<---- Find Closest Number to Zero ---->
+
+Given an integer array nums of size N , return the value of the element with value closest to 0. For multiple answers, return the largest.
+
+Example: 
+nums = [-4, -2, 1, 4, 8]
+output: 
+
+Time Complexity of the approach: O(N)
+Space Complexity of the apporach: O(1)
