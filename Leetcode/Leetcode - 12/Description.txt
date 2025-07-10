@@ -1,0 +1,41 @@
+<---- Integer to Roman Numeral ---->
+
+Seven different symbols represent Roman numerals with the following values:
+
+Symbol   Value  
+I         1  
+V         5  
+X         10  
+L         50  
+C         100  
+D         500  
+M         1000  
+
+Roman numerals are formed by appending the Roman equivalents of decimal place values from highest to lowest.
+
+Conversion Rules:
+1. **If the digit is not 4 or 9**, repeatedly subtract the **largest possible Roman value** and append the corresponding symbol.
+2. **If the digit is 4 or 9**, use subtractive notation:
+   - 4 → IV (5 - 1)  
+   - 9 → IX (10 - 1)  
+   - 40 → XL (50 - 10)  
+   - 90 → XC (100 - 10)  
+   - 400 → CD (500 - 100)  
+   - 900 → CM (1000 - 100)
+
+3. Only powers of 10 symbols (I, X, C, M) can be repeated up to 3 times. Symbols representing 5, 50, and 500 (V, L, D) cannot be repeated.  
+   Example: 3 = III, 30 = XXX, but 4 = IV (not IIII), 40 = XL (not XXXX)
+
+Example:
+num = 1994  
+output = "MCMXCIV"
+
+Breakdown:
+- 1000 → M  
+- 900 → CM  
+- 90 → XC  
+- 4 → IV  
+=> M + CM + XC + IV = "MCMXCIV"
+
+Time Complexity of the Proposed Approach: O(1)  
+Space Complexity: O(1)
