@@ -1,6 +1,4 @@
 nums = list(map(int, input("Please Enter the elements in the Array Sperated by Space: ").split()))
-i = 0
-j = 0
 n = len(nums)
 
 if not nums:
@@ -13,4 +11,4 @@ else:
             nums[i] = nums[j]
             
 print(f"Number of Unique elements in the array {nums} is {i + 1}")
-print(f"Modified Array with uniq elements is {nums[:i + 1]}")
+print(f"Modified Array with unique elements is {nums[:i + 1]}")
